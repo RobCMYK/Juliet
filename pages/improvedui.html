@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Robert Martin's Page</title>
+    <title>Improved UI</title>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
@@ -18,21 +18,71 @@
         <div id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="../index.html">Home</a>
-            <a class="nav-item nav-link" href="oldui.html">Bad UI Design</a>
+            <a class="nav-item nav-link" href="oldui.html" target="_blank">Bad UI Design</a>
             <a class="nav-item nav-link" href="#">Improved Design</a>
-            <a class="nav-item nav-link" href="https://github.com/RobertMartin/FinalProject" target="_blank">Source Code</a>
+            <a class="nav-item nav-link" href="https://github.com/RobCMYK/Juliet" target="_blank">Source Code</a>
           </div>
         </div>
       </nav>
     </div>
     <div id="allContent">
       <div class="info">
-        <p>There are many ways to fix the issues presented by the course evaluation questions. I will continue using the example of the grade question. Below, I have proposed one method of fixing the issues. This style can be modified to clarify many additional questions throughout the survey. As a result, the survey will offer a much better user experience. <br/><br/>
+        <p>There are many ways that you can fix this UI. I will start with some normalities. You can see the changes below. I have moved the email portion above the password portion like it would normaly be found. I also removed the strange sectioning from the email input and used something more basic.Lastly, I changed "do not accept" to "I accept" and made a normal Confirm button instead of "Next", "Cancel", and "Reset". <br/><br/>
         </p>
       </div>
-<!-- ADD FORM FROM INDIA -->
-      <div id="console-box"> 
-      </div> 
+      <div class="container form-container">
+        <div class="form-content">
+            <div class="box">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 card mt-3">
+
+        <form id="myForm" autocomplete="on">
+
+          <div class="form-row">          
+                 
+          <input type="email" name="email" id="email" placeholder="Your email" required class="form-control mb-3">           
+          </div>
+
+          <div class="mb-3">
+              
+            <input type="password" class="form-control" id="pwd" placeholder="Choose Password" name="pswd" required>            
+          </div>
+
+          <div class="login-form__section">
+            <spanclass="checkbox">
+              <label for="accept-terms-conditions" class="checkbox__label">
+                <input id="accept-terms-conditions" type="checkbox">
+                <span class="checkbox__box mb-3">
+                  <span class="icon icon-check checkbox__check">
+                  </span>
+                </span>
+              </label>
+            </span>
+            <a class="login-form__terms-conditions">I accept the 
+              <span class="login-form__terms-conditions-underline mb-3">Terms &amp; Conditions
+              </span>
+            </a>
+          </div>
+          <div id="submit">
+            <button id="confirm" class="btn btn-primary">Confirm</button>
+          </div>
+            
+        </form>
+
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <p id="results"></p>
+
+    <!-- <div id="emailResults"></div>
+    <div id = "pwdResults"></div>
+    <div id = "TACResults"></div> -->
+  
+    <div>
       <p><br>This design improves the user experience of the survey for a variety of reasons. First of all, it automatically provides grade percentage options based on the grade letter inputted. Second, it utilizes constraints that do not allow a student to input an answer that is not logical, which could skew the survey results. Lastly, the design is easier to understand, and it more closely follows the typical grading scale used at UNA. These factors will greatly improve the expereince for users.</p>
     </div>
     <footer>
